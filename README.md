@@ -2,7 +2,7 @@
 This is a Gutenberg Block demo plugin.
 
 ## Usage
-Pulled this repo into your WordPress site's plugins directory. In the root directory of this plugin, execute:
+Pull this repo into your WordPress site's plugins directory. In the root directory of this plugin, execute:
 
 ```
 npm install
