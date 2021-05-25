@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
 
 module.exports = {
   entry: { 
@@ -11,8 +12,10 @@ module.exports = {
     filename: '[name].js',
     clean: true
   },
+  devtool: 'inline-source-map',
   plugins: [
     new MiniCssExtractPlugin(),
+    new DependencyExtractionWebpackPlugin()
   ],
   module: {
     rules: [
